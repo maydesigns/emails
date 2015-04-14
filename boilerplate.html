@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width"/>
+
+    <link rel="stylesheet" href="ink.css"> <!-- For testing only -->
+
+    <style type="text/css">
+
+      /* Ink styles go here in production */
+
+    </style>
+    <style type="text/css">
+
+      /* Your custom styles go here */
+      body, .body {
+        background: white;
+      }
+
+      /*colors*/
+
+      .main-container, .header {
+        background: white;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid #ddd;
+      }
+
+      .border-bottom tr {
+        line-height: 0px !important;
+      }
+
+      .border-bottom td {
+        padding: 0 !important;
+      }
+
+      .social-icon {
+        width: 25px !important;
+      }
+
+      .footer-trio {
+        text-decoration: none;
+        color: gray;
+        font-size: 11px;
+      }
+
+      .social-icon {
+        margin-right: 5px;
+        display: inline-block;
+      }
+
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .footer-container {
+      	display:block!important;
+      	max-width:600px!important;
+      	margin:0 auto!important; /* makes it centered */
+      	clear:both!important;
+      }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .footer-content {
+      	padding:15px;
+      	max-width:600px;
+      	margin:0 auto;
+      	display:block;
+      }
+
+      /*typography*/
+      h5 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        table[class="container"] .block-grid td {
+          width: 100% !important;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+
+          <!-- email body -->
+          <table class="container header">
+            <tr>
+              <td>
+
+                <!-- header -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <a href="#">
+                          <img class="center" src="img/header03.jpg" alt="" />
+                        </a>
+                      </center>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img class="center" src="img/washi.jpg" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img class="center" src="img/hooray-received-order.jpg" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+                      <center>
+                        <img class="center" src="img/order-confirmation-banner.jpg" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table> <!-- /header -->
+
+                <!-- 1px gray content separator -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img class="center" src="img/hr.png" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- order details & shipping: two columns -->
+                <table class="block-grid two-up">
+                  <tr>
+                    <td>
+
+                      <h5>ORDER DETAILS</h5>
+                      <p>
+                        placed by: Allison Zadrozny <br>
+                        order number: <a href="#">2867509</a> <br>
+                        date: March 27, 2015, 2:14 p.m. <br>
+                        phone: 8583423151 <br>
+                        US Priority Mail: 2-5 business days
+                      </p>
+
+                    </td><td> <!-- Make sure the tags are directly next to each other -->
+
+                      <h5>SHIPPING TO</h5>
+                      <p>
+                        Allison Zadrozny<br>
+                        500 E Riverside Dr Apt 139</br>
+                        Austin, TX<br>
+                        78704-1340
+                      </p>
+
+                    </td>
+                  </tr>
+                </table><!-- /order details & shipping: two columns -->
+
+                <!-- 1px gray content separator -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img src="img/hr.png" class="center" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table><!-- /1px gray content separator -->
+
+                <!-- line items table header -->
+                <table class="container header">
+                  <tr>
+                    <td>
+
+                      <table class="row">
+                        <tr>
+                          <td class="wrapper">
+
+                            <table class="eight columns">
+                              <tr>
+                                <td class="">
+
+                                  <h5>DESCRIPTION</h5>
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last hide-for-small">
+
+                            <table class="four columns">
+                              <tr>
+                                <td>
+
+                                  <h5>TOTAL</h5>
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table> <!-- /line items table header -->
+
+
+                <!-- for each item -->
+                <table class="container header">
+                  <tr>
+                    <td>
+
+                      <table class="row">
+                        <tr>
+                          <td class="wrapper">
+
+                            <table class="eight columns">
+                              <tr>
+                                <td class="four sub-columns">
+
+                                  <!-- line item preview image -->
+                                  <img src="img/britt-bass-watercolor.png" class="" alt="" /><!-- /line item preview image -->
+
+                                </td>
+                                <td class="eight sub-columns last">
+
+                                  <!-- line item description -->
+                                  <p class="description">
+                                    Book <br>
+                                    Blank <br>
+                                    Britt Bass Watercolor <br>
+                                    Qty: 1 <br>
+                                    $15 <span style="color: #ddd;">/ea<span>
+                                  </p>
+                                  <p class="show-for-small">
+                                    TOTAL: $15
+                                  </p>
+                                  <!-- /line item description -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last hide-for-small">
+
+                            <table class="four columns">
+                              <tr>
+                                <td>
+
+                                  <!-- line item total price -->
+                                  <p>
+                                    $15
+                                  </p><!-- /line item total price -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table> <!-- /for each item -->
+
+                <!-- for each item -->
+                <table class="container header">
+                  <tr>
+                    <td>
+
+                      <table class="row">
+                        <tr>
+                          <td class="wrapper">
+
+                            <table class="eight columns">
+                              <tr>
+                                <td class="four sub-columns">
+
+                                  <!-- line item preview image -->
+                                  <img src="img/britt-bass-watercolor-1.png" class="" alt="" /><!-- /line item preview image -->
+
+                                </td>
+                                <td class="eight sub-columns last">
+
+                                  <!-- line item description -->
+                                  <p class="description">
+                                    Note <br>
+                                    Britt Bass Watercolor <br>
+                                    Qty: 2 <br>
+                                    $25 <span style="color: #ddd;">/ea<span>
+                                  </p>
+                                  <p class="show-for-small">
+                                    TOTAL: $50
+                                  </p>
+                                  <!-- /line item description -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last hide-for-small">
+
+                            <table class="four columns">
+                              <tr>
+                                <td>
+
+                                  <!-- line item total price -->
+                                  <p>
+                                    $50
+                                  </p><!-- /line item total price -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table> <!-- /for each item -->
+
+                <!-- for each item -->
+                <table class="container header">
+                  <tr>
+                    <td>
+
+                      <table class="row">
+                        <tr>
+                          <td class="wrapper">
+
+                            <table class="eight columns">
+                              <tr>
+                                <td class="four sub-columns">
+
+                                  <!-- line item preview image -->
+                                  <img src="img/blue-antique.png" class="" alt="" /><!-- /line item preview image -->
+
+                                </td>
+                                <td class="eight sub-columns last">
+
+                                  <!-- line item description -->
+                                  <p class="description">
+                                    Book <br>
+                                    2015-2016 Academic Agenda: Months + Weeks (Aug to July) <br>
+                                    Blue Antique Floral <br>
+                                    “2015-2016” <br>
+                                    Qty: 1 <br>
+                                    $23 <span style="color: #ddd;">/ea<span>
+                                  </p>
+                                  <p class="show-for-small">
+                                    TOTAL: $23
+                                  </p>
+                                  <!-- /line item description -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                          <td class="wrapper last hide-for-small">
+
+                            <table class="four columns">
+                              <tr>
+                                <td>
+
+                                  <!-- line item total price -->
+                                  <p>
+                                    $23
+                                  </p><!-- /line item total price -->
+
+                                </td>
+                                <td class="expander"></td>
+                              </tr>
+                            </table>
+
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table> <!-- /for each item -->
+
+                <!-- 1px gray content separator -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img src="img/hr.png" class="center" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table><!-- /1px gray content separator -->
+
+                <!-- order tracking & payment: two columns -->
+                <table class="block-grid two-up">
+                  <tr>
+                    <td>
+
+                      <h5>TRACKING</h5>
+
+                      <p>
+                        Can’t wait for your May Designs to arrive? Track your
+                        order status <a href="#">here</a>. You can even re-order
+                         if you need more!
+                      </p>
+
+                      </p>
+
+                    </td><td> <!-- Make sure the tags are directly next to each other -->
+
+                      <h5>PAYMENT</h5>
+                      <p>
+                        discounts: -$41 (MDSTAFFBOOKS15) <br>
+                        tax: $0.00 <br>
+                        shipping: $6 <br>
+                        total charged: $0
+                      </p>
+
+                    </td>
+                  </tr>
+                </table><!-- /order tracking & payment: two columns -->
+
+                <!-- 1px gray content separator -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img src="img/hr.png" class="center" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table><!-- /1px gray content separator -->
+
+                <!-- show us your designs -->
+                <table class="block-grid one-up">
+                  <tr>
+                    <td>
+
+                      <center>
+                        <img src="img/social-media.jpg" class="center" alt="" />
+                      </center>
+
+                    </td>
+                  </tr>
+                </table><!-- /show us your designs -->
+
+
+              </td>
+            </tr>
+          </table> <!-- /email body -->
+
+          <table class="footer-wrap">
+          	<tbody><tr>
+          		<td></td>
+          		<td class="footer-container">
+
+                <!-- content -->
+                <div class="footer-content">
+                  <table>
+                    <tbody><tr>
+                    	<td align="center" style="margin-bottom: 10px;">
+                          WE’RE SUPER FRIENDLY! FIND US HERE:
+                    	</td>
+                    </tr>
+                    <tr>
+                    	<td align="center">
+                    		<p style="text-align: center;">
+                          <a href="https://www.facebook.com/MayBooks" class="social-icon"><img src="./img/icons/facebook.png" alt=""></a>
+                          <a href="https://www.pinterest.com/maybooks/" class="social-icon"><img src="./img/icons/pinterest.png" alt=""></a>
+                          <a href="https://twitter.com/maydesigns" class="social-icon"><img src="./img/icons/twitter.png" alt=""></a>
+                          <a href="https://instagram.com/maydesigns/" class="social-icon"><img src="./img/icons/instagram.png" alt=""></a>
+                    		</p>
+                    	</td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+            						<p>
+            							<a href="" class="footer-trio">©MAY DESIGNS</a> |
+            							<a href="http://www.maydesigns.com/about/terms/" class="footer-trio">Terms &amp; Conditions</a> |
+            							<a href="http://www.maydesigns.com/about/privacy/" class="footer-trio">Privacy Policy</a>
+            						</p>
+            					</td>
+                    </tr>
+                  </tbody></table>
+                </div><!-- /content -->
+
+          		</td>
+          		<td></td>
+          	</tr>
+          </tbody></table>
+
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
